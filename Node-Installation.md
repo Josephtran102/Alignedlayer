@@ -164,7 +164,6 @@ alignedlayerd query bank balances $WALLET_ADDRESS
 ```
 ## Link faucet:
 - [Faucet](https://faucet.alignedlayer.com/)
-- [Go v1.22](https://go.dev/dl/)
 # 16. Create validator: 
 *Đổi tên theo tùy chọn: 
 - moniker: tên node

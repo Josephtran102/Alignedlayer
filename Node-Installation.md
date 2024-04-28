@@ -122,10 +122,37 @@ if curl -s --head curl https://testnet-files.itrocket.net/alignedlayer/snap_alig
 fi
 ```
 
-# Enable and start service
+# Enable and start service: 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable alignedlayerd
 sudo systemctl restart alignedlayerd && sudo journalctl -u alignedlayerd -f
+```
+
+# Create wallet:
+
+## To create a new wallet, use the following command. don’t forget to save the mnemonic
+```bash
+alignedlayerd keys add $WALLET
+```
+## To restore exexuting wallet, use the following command
+```bash
+alignedlayerd keys add $WALLET --recover
+```
+## Save wallet and validator address
+```bash
+WALLET_ADDRESS=$(alignedlayerd keys show $WALLET -a)
+VALOPER_ADDRESS=$(alignedlayerd keys show $WALLET --bech val -a)
+echo "export WALLET_ADDRESS="$WALLET_ADDRESS >> $HOME/.bash_profile
+echo "export VALOPER_ADDRESS="$VALOPER_ADDRESS >> $HOME/.bash_profile
+source $HOME/.bash_profile
+```
+## Check sync status, once your node is fully synced, the output from above will print "false"
+```bash
+alignedlayerd status 2>&1 | jq 
+```
+## Before creating a validator, you need to fund your wallet and check balance
+```bash
+alignedlayerd query bank balances $WALLET_ADDRESS 
 ```
 

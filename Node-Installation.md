@@ -5,8 +5,8 @@
 - Disk: 200GB of storage (NVME)
 - Linux amd64 arm64 (The guide was tested on Ubuntu 22.04.4 LTS)
 ```
-#### Software
-
+#### Software:
+- [Go v1.22](https://go.dev/dl/)
 - [jq](https://jqlang.github.io/jq/download/)
 - [sponge](https://linux.die.net/man/1/sponge)
 - [make](https://www.gnu.org/software/make/#download)

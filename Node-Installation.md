@@ -163,7 +163,7 @@ alignedlayerd status 2>&1 | jq
 alignedlayerd query bank balances $WALLET_ADDRESS 
 ```
 ## Link faucet:
-[Faucet]([https://go.dev/dl/](https://faucet.alignedlayer.com/))
+[Faucet]([https://faucet.alignedlayer.com/])
 # 16. Create validator: 
 *Đổi tên theo tùy chọn: 
 - moniker: tên node

@@ -5,6 +5,13 @@
 - Disk: 200GB of storage (NVME)
 - Linux amd64 arm64 (The guide was tested on Ubuntu 22.04.4 LTS)
 ```
+#### Software
+
+- [jq](https://jqlang.github.io/jq/download/)
+- [sponge](https://linux.die.net/man/1/sponge)
+- [make](https://www.gnu.org/software/make/#download)
+- [gcc](https://gcc.gnu.org/install/)
+
 # 1. Cài đặt dependencies:
 ```bash
 sudo apt update && sudo apt upgrade -y

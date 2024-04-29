@@ -194,6 +194,4 @@ alignedlayerd tx staking create-validator validator.json \
     --from $WALLET \
     --chain-id alignedlayer \
 	--fees 50stake \
-
-    alignedvaloper10zgz5lnt3g44f65g0xrez82jyhaye75gjkg9e7
 ```
